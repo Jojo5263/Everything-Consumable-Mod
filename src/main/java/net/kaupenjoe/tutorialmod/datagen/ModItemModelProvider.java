@@ -15,6 +15,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.ALEXANDRITE.get());
         basicItem(ModItems.RAW_ALEXANDRITE.get());
+        basicItem(ModItems.COCAIN.get());
+        basicItem(ModItems.WEED.get());
 
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.KOHLRABI.get());

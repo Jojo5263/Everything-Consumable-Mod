@@ -43,6 +43,18 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> CONSUMABLE_DRUGS = CREATIVE_MODE_TABS.register("consumable_drugs",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.COCAIN.get()))
+                    .withTabsBefore(ALEXANDRITE_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.tutorialmod.consumable_drugs"))
+                    .displayItems((itemDisplayParameters, output) -> {
+
+                        output.accept(ModItems.COCAIN.get());
+                        output.accept(ModItems.WEED.get());
+
+                    }).build());
+
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

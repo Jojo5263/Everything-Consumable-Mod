@@ -3,6 +3,7 @@ package net.kaupenjoe.tutorialmod.item;
 import net.kaupenjoe.tutorialmod.TutorialMod;
 import net.kaupenjoe.tutorialmod.item.custom.ChiselItem;
 import net.kaupenjoe.tutorialmod.item.custom.FuelItem;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -36,6 +37,13 @@ public class ModItems {
             });
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(), 1200));
+
+    public static final RegistryObject<Item> COCAIN = ITEMS.register("cocain",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COCAIN)));
+
+    public static final RegistryObject<Item> WEED = ITEMS.register("weed",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.WEED)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
