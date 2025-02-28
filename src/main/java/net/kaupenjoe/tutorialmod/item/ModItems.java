@@ -1,10 +1,11 @@
 package net.kaupenjoe.tutorialmod.item;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.item.custom.ChiselItem;
 import net.kaupenjoe.tutorialmod.item.custom.FuelItem;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -43,6 +44,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> WEED = ITEMS.register("weed",
             () -> new Item(new Item.Properties().food(ModFoodProperties.WEED)));
+
+    public static final RegistryObject<Item> CUSTOM_SEEDS = ITEMS.register("custom_seeds",
+            () -> new BlockItem(ModBlocks.CUSTOM_CROP.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

@@ -8,6 +8,10 @@
   "item.tutorialmod.kohlrabi": "Kohlrabi",
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
 
+  "block.tutorialmod.custom_crop": "Custom Crop",
+  "item.tutorialmod.custom_seeds": "Custom Seeds",
+
+
 
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",

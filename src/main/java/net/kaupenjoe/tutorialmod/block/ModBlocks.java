@@ -1,6 +1,7 @@
 package net.kaupenjoe.tutorialmod.block;
 
 import net.kaupenjoe.tutorialmod.TutorialMod;
+import net.kaupenjoe.tutorialmod.block.custom.CustomCropBlock;
 import net.kaupenjoe.tutorialmod.block.custom.MagicBlock;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -38,6 +39,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
 
+    public static final RegistryObject<Block> CUSTOM_CROP = registerBlock("custom_crop",
+            () -> new CustomCropBlock(BlockBehaviour.Properties.of()
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.CROP)));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
@@ -49,6 +57,8 @@ public class ModBlocks {
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

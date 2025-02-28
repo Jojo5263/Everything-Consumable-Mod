@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tutorialmod:custom_seeds"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tutorialmod:weed"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "tutorialmod:custom_crop",
+          "properties": {
+            "age": 7
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:amphetamine_bottle"
+    },
+    {
+      "item": "tutorialmod:amphetamine_bottle"
+    },
+    {
+      "item": "tutorialmod:amphetamine_bottle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:cocain"
+  }
+}
