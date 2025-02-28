@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 public class CustomCropBlock extends CropBlock {
+    public static int MAX_AGE = 7;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 7); // 8 Wachstumsstufen (0–7)
 
     public CustomCropBlock(Properties properties) {
@@ -26,7 +27,12 @@ public class CustomCropBlock extends CropBlock {
     }
 
     @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(AGE);
+    public int getMaxAge() {
+        return MAX_AGE;
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(AGE);
     }
 }

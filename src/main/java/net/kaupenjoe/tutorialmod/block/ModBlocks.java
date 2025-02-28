@@ -8,6 +8,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -39,12 +40,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
 
-    public static final RegistryObject<Block> CUSTOM_CROP = registerBlock("custom_crop",
-            () -> new CustomCropBlock(BlockBehaviour.Properties.of()
-                    .noCollission()
-                    .randomTicks()
-                    .instabreak()
-                    .sound(SoundType.CROP)));
+    public static final RegistryObject<Block> CUSTOM_CROP = BLOCKS.register("custom_crop",
+            () -> new CustomCropBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)));
 
 
 

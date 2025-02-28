@@ -17,6 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_ALEXANDRITE.get());
         basicItem(ModItems.COCAIN.get());
         basicItem(ModItems.WEED.get());
+        basicItem(ModItems.CUSTOM_SEEDS.get());
 
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.KOHLRABI.get());

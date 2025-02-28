@@ -6,6 +6,7 @@ import net.kaupenjoe.tutorialmod.client.ModClient;
 import net.kaupenjoe.tutorialmod.item.ModCreativeModeTabs;
 import net.kaupenjoe.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -48,7 +49,10 @@ public class TutorialMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)  {
-
+        event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.WEED.get(), 0.4f);
+            ComposterBlock.COMPOSTABLES.put(ModItems.CUSTOM_SEEDS.get(),0.4f);
+        });
     }
 
     // Add the example block item to the building blocks tab

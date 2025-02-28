@@ -51,6 +51,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.COCAIN.get());
                         output.accept(ModItems.WEED.get());
+                        output.accept(ModItems.CUSTOM_SEEDS.get());
 
                     }).build());
 

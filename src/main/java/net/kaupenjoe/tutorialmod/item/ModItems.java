@@ -5,8 +5,8 @@ import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.item.custom.ChiselItem;
 import net.kaupenjoe.tutorialmod.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -46,7 +46,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoodProperties.WEED)));
 
     public static final RegistryObject<Item> CUSTOM_SEEDS = ITEMS.register("custom_seeds",
-            () -> new BlockItem(ModBlocks.CUSTOM_CROP.get(), new Item.Properties()));
+            () -> new ItemNameBlockItem(ModBlocks.CUSTOM_CROP.get(), new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
