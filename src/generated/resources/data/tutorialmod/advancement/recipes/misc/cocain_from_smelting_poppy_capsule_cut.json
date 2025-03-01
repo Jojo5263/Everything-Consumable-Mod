@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_poppy_capsule_cut": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:poppy_capsule_cut"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:cocain_from_smelting_poppy_capsule_cut"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_poppy_capsule_cut"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:cocain_from_smelting_poppy_capsule_cut"
+    ]
+  }
+}

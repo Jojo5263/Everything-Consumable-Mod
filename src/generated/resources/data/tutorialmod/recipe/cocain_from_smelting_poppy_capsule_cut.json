@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "poppy_capsule_cut",
+  "ingredient": {
+    "item": "tutorialmod:poppy_capsule_cut"
+  },
+  "result": {
+    "id": "tutorialmod:cocain"
+  }
+}

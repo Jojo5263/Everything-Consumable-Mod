@@ -39,6 +39,13 @@ public class ModItems {
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",
             () -> new FuelItem(new Item.Properties(), 1200));
 
+
+    public static final RegistryObject<Item> POPPY_CAPSULE_CUT = ITEMS.register("poppy_capsule_cut",
+            () -> new Item(new Item.Properties()));
+
+
+
+
     public static final RegistryObject<Item> COCAIN = ITEMS.register("cocain",
             () -> new Item(new Item.Properties().food(ModFoodProperties.COCAIN)));
 
@@ -47,6 +54,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
             () -> new Item(new Item.Properties().food(ModFoodProperties.JOINT)));
+
+
+
+
 
     public static final RegistryObject<Item> CUSTOM_SEEDS = ITEMS.register("custom_seeds",
             () -> new ItemNameBlockItem(ModBlocks.CUSTOM_CROP.get(), new Item.Properties()));

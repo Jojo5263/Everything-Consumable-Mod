@@ -48,7 +48,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CUSTOM_CROP.get(), this.createCropDrops(ModBlocks.CUSTOM_CROP.get(),
             ModItems.WEED.get(), ModItems.CUSTOM_SEEDS.get(), lootItemConditionBuilder));
 
+
+
         //Ende Weed Crop Loottable
+
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
@@ -61,6 +65,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 )
         );
     }
+
+
 
     @Override
     protected Iterable<Block> getKnownBlocks() {

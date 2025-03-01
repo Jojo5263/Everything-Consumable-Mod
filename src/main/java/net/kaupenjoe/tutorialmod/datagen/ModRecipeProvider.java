@@ -24,6 +24,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> ALEXANDRITE_SMELTABLES = List.of(ModItems.RAW_ALEXANDRITE.get(),
                 ModBlocks.ALEXANDRITE_ORE.get(), ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
 
+        List<ItemLike> POPPY_CAPSULE_CUT_SMELTABLES = List.of(
+                ModItems.POPPY_CAPSULE_CUT.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXANDRITE_BLOCK.get())
                 .pattern("AAA")
                 .pattern("AAA")
@@ -44,6 +47,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.ALEXANDRITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ALEXANDRITE_BLOCK.get()), has(ModBlocks.ALEXANDRITE_BLOCK.get())).save(pRecipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.POPPY_CAPSULE_CUT.get(), 1)
+                .requires(Items.POPPY)
+                .requires(Items.STICK)
+                .unlockedBy(getHasName(Items.POPPY), has(Items.POPPY)).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 32)
                 .requires(ModBlocks.MAGIC_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ALEXANDRITE_BLOCK.get()), has(ModBlocks.ALEXANDRITE_BLOCK.get()))
@@ -51,6 +59,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 0.25f, 200, "alexandrite");
         oreBlasting(pRecipeOutput, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 0.25f, 100, "alexandrite");
+
+        oreSmelting(pRecipeOutput, POPPY_CAPSULE_CUT_SMELTABLES, RecipeCategory.MISC, ModItems.COCAIN.get(), 0.25f, 200, "poppy_capsule_cut");
+
 
     }
 
