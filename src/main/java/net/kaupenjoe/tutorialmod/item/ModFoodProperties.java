@@ -16,6 +16,11 @@ public class ModFoodProperties {
     public static final FoodProperties WEED = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
             .effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 400), 1).build();
 
+    public static final FoodProperties JOINT = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
+            .effect(new MobEffectInstance(MobEffects.LEVITATION, 400), 1)
+            .effect(new MobEffectInstance(MobEffects.CONFUSION, 400), 1)
+            .build();
+
 
 
 }

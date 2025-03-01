@@ -45,6 +45,9 @@ public class ModItems {
     public static final RegistryObject<Item> WEED = ITEMS.register("weed",
             () -> new Item(new Item.Properties().food(ModFoodProperties.WEED)));
 
+    public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.JOINT)));
+
     public static final RegistryObject<Item> CUSTOM_SEEDS = ITEMS.register("custom_seeds",
             () -> new ItemNameBlockItem(ModBlocks.CUSTOM_CROP.get(), new Item.Properties()));
 
