@@ -5,6 +5,7 @@ import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.client.ModClient;
 import net.kaupenjoe.tutorialmod.item.ModCreativeModeTabs;
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
@@ -40,6 +41,7 @@ public class TutorialMod{
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModPotions.register(modEventBus);
 
         modEventBus.addListener(ModClient::onClientSetup);
 

@@ -1,10 +1,15 @@
 package net.kaupenjoe.tutorialmod.event;
 
 import net.kaupenjoe.tutorialmod.item.ModItems;
+import net.kaupenjoe.tutorialmod.potion.ModPotions;
 import net.minecraft.world.entity.animal.frog.Frog;
 import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraftforge.event.brewing.BrewingRecipeRegisterEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -50,5 +55,13 @@ public class ModEvents {
                 horse.spawnAtLocation(new ItemStack(ModItems.KETAMINE.get(), amount));
             }
         }
+    }
+
+    @SubscribeEvent
+    public static void onBrewingRecipeRegister (BrewingRecipeRegisterEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.WATER, Items.APPLE, ModPotions.APPLE_JUICE.getHolder().get());
+
     }
 }

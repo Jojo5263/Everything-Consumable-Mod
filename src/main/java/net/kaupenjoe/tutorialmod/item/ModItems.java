@@ -5,10 +5,7 @@ import net.kaupenjoe.tutorialmod.block.ModBlocks;
 import net.kaupenjoe.tutorialmod.item.custom.ChiselItem;
 import net.kaupenjoe.tutorialmod.item.custom.FuelItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -62,6 +59,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> KETAMINE = ITEMS.register("ketamine",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KETAMINE)));
+
+    public static final RegistryObject<Item> APPLE_JUICE = ITEMS.register("apple_juice",
+            () -> new PotionItem(new Item.Properties().stacksTo(16)));
 
     //Apfelsaft im Braustand
     //Ritual für Superdroge
