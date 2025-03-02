@@ -46,6 +46,8 @@ public class ModItems {
 
 
 
+
+
     public static final RegistryObject<Item> COCAIN = ITEMS.register("cocain",
             () -> new Item(new Item.Properties().food(ModFoodProperties.COCAIN)));
 
@@ -54,6 +56,15 @@ public class ModItems {
 
     public static final RegistryObject<Item> JOINT = ITEMS.register("joint",
             () -> new Item(new Item.Properties().food(ModFoodProperties.JOINT)));
+
+    public static final RegistryObject<Item> FIVEMEODMT = ITEMS.register("5meodmt",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.FIVEMEODMT)));
+
+    public static final RegistryObject<Item> KETAMINE = ITEMS.register("ketamine",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.KETAMINE)));
+
+    //Apfelsaft im Braustand
+    //Ritual für Superdroge
 
 
 

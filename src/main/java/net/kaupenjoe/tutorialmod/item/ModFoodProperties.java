@@ -21,6 +21,20 @@ public class ModFoodProperties {
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 400), 1)
             .build();
 
+    public static final FoodProperties FIVEMEODMT = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 1500), 1)
+            .effect(new MobEffectInstance(MobEffects.CONFUSION, 1500), 1)
+            .effect(new MobEffectInstance(MobEffects.BLINDNESS, 1500), 1)
+            .effect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 5000), 1)
+            .effect(new MobEffectInstance(MobEffects.HEAL, 1500), 1)
+            .build();
+
+    public static final FoodProperties KETAMINE = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500), 1)
+            .effect(new MobEffectInstance(MobEffects.DIG_SPEED, 500), 1)
+            .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 1)
+            .build();
+
 
 
 }

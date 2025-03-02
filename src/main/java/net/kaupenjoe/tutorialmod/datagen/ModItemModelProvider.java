@@ -20,6 +20,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.CUSTOM_SEEDS.get());
         basicItem(ModItems.JOINT.get());
         basicItem(ModItems.POPPY_CAPSULE_CUT.get());
+        basicItem(ModItems.POPPY_CAPSULE_CUT.get());
+        basicItem(ModItems.FIVEMEODMT.get());
+        basicItem(ModItems.KETAMINE.get());
 
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.KOHLRABI.get());
