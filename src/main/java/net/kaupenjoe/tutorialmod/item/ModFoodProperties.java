@@ -35,6 +35,10 @@ public class ModFoodProperties {
             .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 500), 1)
             .build();
 
+    public static final FoodProperties LSD = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
+            .effect(new MobEffectInstance(MobEffects.LEVITATION, 400), 1)
+            .build();
+
 
 
 }

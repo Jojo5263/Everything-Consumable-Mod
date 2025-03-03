@@ -56,6 +56,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.POPPY_CAPSULE_CUT.get());
                         output.accept(ModItems.FIVEMEODMT.get());
                         output.accept(ModItems.KETAMINE.get());
+                        output.accept(ModItems.LSD.get());
 
                     }).build());
 

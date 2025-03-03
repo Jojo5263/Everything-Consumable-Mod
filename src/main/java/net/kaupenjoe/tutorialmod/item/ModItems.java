@@ -60,10 +60,11 @@ public class ModItems {
     public static final RegistryObject<Item> KETAMINE = ITEMS.register("ketamine",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KETAMINE)));
 
-    public static final RegistryObject<Item> APPLE_JUICE = ITEMS.register("apple_juice",
-            () -> new PotionItem(new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> LSD = ITEMS.register("lsd",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.LSD)));
 
-    //Apfelsaft im Braustand
+
+
     //Ritual für Superdroge
 
 

@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-01T22:47:02.5990939	Item Models: tutorialmod
+// 1.21.1	2025-03-03T10:29:42.0143665	Item Models: tutorialmod
 6dad7f5e7801542fd349e73c3e1d30b3f5a9722f assets/tutorialmod/models/item/5meodmt.json
 9c36309b9b22da0f2a38fda68096fcc3013c449b assets/tutorialmod/models/item/alexandrite.json
 0cea8cc5a03c2c4533fb4623452fc74d7754c5fe assets/tutorialmod/models/item/aurora_ashes.json
@@ -8,6 +8,7 @@ d1fb5ad6ca80869b594458683c536086cc64500d assets/tutorialmod/models/item/cocain.j
 c710d5c85fd186903a620d6910e190a58c9ac3df assets/tutorialmod/models/item/joint.json
 4804dc1f7ed1c1cf6410711e93e70c70f18ca420 assets/tutorialmod/models/item/ketamine.json
 35fc7dc4a05adc5b9d9bec5dfe1468735a1cc001 assets/tutorialmod/models/item/kohlrabi.json
+82520698d7465a241f874a1a946fe7ae13ba4358 assets/tutorialmod/models/item/lsd.json
 e5194c81f33f3b980cc8bde56f8c32dc40973a9d assets/tutorialmod/models/item/poppy_capsule_cut.json
 618bcb87cb7acab7c54afbe2ed857af447c05872 assets/tutorialmod/models/item/raw_alexandrite.json
 f18d46416ea3631ddb4e2be8f35a290e536dd300 assets/tutorialmod/models/item/weed.json
