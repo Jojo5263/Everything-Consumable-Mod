@@ -24,6 +24,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.FIVEMEODMT.get());
         basicItem(ModItems.KETAMINE.get());
         basicItem(ModItems.LSD.get());
+        basicItem(ModItems.ECSTASY.get());
 
         basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.KOHLRABI.get());

@@ -57,6 +57,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FIVEMEODMT.get());
                         output.accept(ModItems.KETAMINE.get());
                         output.accept(ModItems.LSD.get());
+                        output.accept(ModItems.ECSTASY.get());
 
                     }).build());
 

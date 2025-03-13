@@ -37,6 +37,9 @@ public class ModFoodProperties {
 
     public static final FoodProperties LSD = new FoodProperties.Builder().nutrition(3).saturationModifier(0.25f)
             .effect(new MobEffectInstance(MobEffects.LEVITATION, 400), 1)
+            .effect(new MobEffectInstance(MobEffects.CONFUSION, 400), 1)
+            .effect(new MobEffectInstance(MobEffects.DARKNESS, 400), 1)
+            .effect(new MobEffectInstance(MobEffects.BLINDNESS, 400), 1)
             .build();
 
 

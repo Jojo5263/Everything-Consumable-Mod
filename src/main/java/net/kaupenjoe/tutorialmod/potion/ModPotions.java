@@ -16,6 +16,9 @@ public class ModPotions {
     public static final RegistryObject<Potion> APPLE_JUICE = POTIONS.register("tutorialmod_apple_juice",
             () -> new Potion(new MobEffectInstance(MobEffects.HEALTH_BOOST, 3600)));
 
+    public static final RegistryObject<Potion> VODKA = POTIONS.register("tutorialmod_vodka",
+            () -> new Potion(new MobEffectInstance(MobEffects.CONFUSION, 3600), new MobEffectInstance(MobEffects.JUMP, 3600, 5)));
+
 
 
     public static void register(IEventBus eventBus) {

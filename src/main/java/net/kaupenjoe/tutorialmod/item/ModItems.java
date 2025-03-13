@@ -63,6 +63,9 @@ public class ModItems {
     public static final RegistryObject<Item> LSD = ITEMS.register("lsd",
             () -> new Item(new Item.Properties().food(ModFoodProperties.LSD)));
 
+    public static final RegistryObject<Item> ECSTASY = ITEMS.register("ecstasy",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.COCAIN)));
+
 
 
     //Ritual für Superdroge

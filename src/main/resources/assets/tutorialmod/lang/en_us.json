@@ -16,9 +16,17 @@
   "item.tutorialmod.5meodmt": "5-MeO-DMT",
   "item.tutorialmod.ketamine": "Ketamine",
   "item.tutorialmod.lsd": "LSD",
-  "item.tutorialmod.apple_juice": "Apple Juice",
+  "item.tutorialmod.ecstasy": "Ecstasy",
+
+
+
 
   "item.minecraft.potion.effect.tutorialmod_apple_juice": "Apple Juice",
+  "item.minecraft.potion.effect.tutorialmod_vodka": "Vodka",
+  "item.minecraft.potion.effect.tutorialmod_lingering_apple_juice": "Lingering Apple Juice",
+  "item.minecraft.potion.effect.tutorialmod_lingering_vodka": "Lingering Vodka",
+  "item.minecraft.potion.effect.tutorialmod_throwable_apple_juice": "Throwable Apple Juice",
+  "item.minecraft.potion.effect.tutorialmod_throwable_vodka": "Throwable Vodka",
 
 
 

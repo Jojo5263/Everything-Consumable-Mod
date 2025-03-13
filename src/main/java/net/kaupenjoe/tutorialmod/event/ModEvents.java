@@ -62,6 +62,7 @@ public class ModEvents {
         PotionBrewing.Builder builder = event.getBuilder();
 
         builder.addMix(Potions.WATER, Items.APPLE, ModPotions.APPLE_JUICE.getHolder().get());
+        builder.addMix(Potions.WATER, Items.POTATO, ModPotions.VODKA.getHolder().get());
 
     }
 }
